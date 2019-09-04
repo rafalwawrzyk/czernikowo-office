@@ -1,0 +1,80 @@
+// @import "../../variables/variables.scss";
+
+
+// .headerButton {
+// 	display: none;
+// 	@media screen and (min-width: $break-md2) {
+// 		display: block;
+// 		position: absolute;
+// 		top: 70%;
+// 		width: 100%;
+// 		button {
+// 			height: 50px;
+// 			font-size: 16px;
+// 		}
+// 	}
+// }
+
+// .pageTitle {
+// 	font-size: $font-sm2;
+// 	font-family: 'Montserrat', sans-serif;
+//     margin: 0;
+//     color:#525252;
+// 	@media screen and (min-width: $break-sm2) {
+// 		font-size: $font-md2;
+// 		text-align: left;
+// 	}
+// 	@media screen and (min-width: $break-md) {
+// 		font-size: $font-md2;
+// 	}
+// 	@media screen and (min-width: $break-md3) {
+// 		font-size: $font-lg;
+// 	}
+// 	@media screen and (min-width: $break-md2) {
+// 		font-size: 60px;
+// 		position: absolute;
+// 		top: 40%;
+// 		-webkit-transform: translateY(-50%);
+// 		-moz-transform: translateY(-50%);
+// 		-ms-transform: translateY(-50%);
+// 		-o-transform: translateY(-50%);
+// 	}
+// 	@media screen and (min-width: $break-md3) {
+// 		font-size: 63px;
+// 	}
+// 	@media screen and (min-width: $break-md4) {
+// 		font-size: 74px;
+// 	}
+// 	@media screen and (min-width: $break-lg2) {
+// 		font-size: 85px;
+// 	}
+// 	@media screen and (min-width: $break-lg3) {
+// 		font-size: 93px;
+// 	}
+// 	@media screen and (min-width: $break-lg4) {
+// 		font-size: 112px;
+// 	}
+// 	@media screen and (min-width: $break-lg5) {
+// 		font-size: 115px;
+// 	}
+// }
+
+// .subpageTitle {
+// 	@extend .pageTitle;
+// 	@media screen and (min-width: $break-md2) {
+// 		position: static;
+// 		transform: none;
+// 		-webkit-transform: none;
+// 		-moz-transform: none;
+// 		-ms-transform: none;
+// 		-o-transform: none;
+// 	}
+
+// 	@media screen and (min-width: $break-lg) {
+//         font-size:75px;
+// 	}
+// }
+
+// .colored {
+// 	color: #ff6734;
+// }
