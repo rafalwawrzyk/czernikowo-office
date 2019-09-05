@@ -8,11 +8,8 @@ import udrawbusiness from '../static/business.svg';
 import ContactSubsection from '../components/contactSubsection/contactSubsection';
 import Footer from '../components/footer/footer';
 import Header from '../components/Header/header';
-import styled from 'styled-components';
+import {HomeWrapper} from './styles/home'
 
-const HomeWrapper = styled.div`
-	@media screen and (min-width: 900px) {margin-top: 0;}
-`;
 
 const Home = () => {
 	{console.log('rendered')}

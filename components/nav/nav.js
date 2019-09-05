@@ -1,202 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import css from './styles.scss';
-import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
 import Router from 'next/router';
-import styled, {keyframes} from 'styled-components'
+import {Navigation,
+	NavList,
+	Hamburger,
+	Line1,
+	Line2,
+	Line3,
+	Linked,
+	NavItem} from './style';
 
 
-const Navigation = styled.nav`
-		width: 100%;
-	position: relative;
-	height: 50px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 200;
-	background-color:#fff;
-	border-bottom:1px solid #FF6734;
-	@media screen and (min-width:900px) {
-		position: static;
-		height: 100%;
-		display: flex;
-		align-items: center;
-		border-bottom:none;
-	}
-`
-
-const NavList = styled.div`
-	width: 100%;
-	/* height: 100vh; */
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	position: absolute;
-	top: 50%;
-	transform: translate(0, -50%);
-	opacity: 0;
-	ul{
-		margin-left:auto;
-		margin-right:auto;
-	}
-	@media screen and (min-width:900px) {
-		opacity: 1 !important;
-		visibility:visible !important;
-		top: 0;
-		transform: none;
-		position: static;
-		-webkit-transform: none;
-		-moz-transform: none;
-		-ms-transform: none;
-		-o-transform: none;
-		ul{
-			margin-left:0;
-			margin-right:0;
-		}
-	}
-	ul {
-		list-style-type: none;
-    padding: 0;
-    width: 400px;
-		@media screen and (min-width:900px) {
-      display: flex;
-      justify-content: space-between;
-		}
-		li {
-			width: 100%;
-			@media screen and (min-width:900px) {
-				left: 0;
-				width: auto;
-        position: relative;
-        text-align: center;
-				
-			}
-		}
-	}
-`
-
-const Hamburger = styled.div`
-	width: 30px;
-	height: 45px;
-	display: flex;
-	position: relative;
-	margin-left: 10px;
-	z-index: 300;
-	@media screen and (min-width:900px) {
-		display: none;
-	}
-`
-
-const Line = styled.div`
-		height: 2px;
-	background-color: #ff6734;
-	width: 100%;
-	position: absolute;
-	transform: translate(-50%, -50%);
-`
-
-const Line1 = styled(Line)`
-		top: 30%;
-		left: 50%;
-`
-
-const Line2 = styled(Line)`
-		top: 50%;
-		left: 50%;
-`
-
-const Line3 = styled(Line)`
-		top: 70%;
-		left: 50%;
-`
-
-const Linked = styled.li`
-		text-decoration: none;
-	position: relative;
-	left: -500px;
-`
-const AnimeLines = keyframes`
-	from{
-    opacity:0;
-    transform:translateY(-10px)
-  }
-  to{
-    opacity:1;
-    transform:translateY(0px)
-  }
-`
-
-const AnimeLines2 = keyframes`
-	from{
-    opacity:0;
-    transform:translateY(10px)
-  }
-  to{
-    opacity:1;
-    transform:translateY(0px)
-  }
-`
-
-const NavItem = styled.a`
-	text-decoration: none;
-	color: #fff;
-	text-transform: uppercase;
-	width: 100%;
-	display: block;
-	padding: 10px 0;
-	font-size: 30px;
-	-webkit-backface-visibility: hidden;
-
-	@media screen and (min-width:900px) {
-		padding: none;
-		color: #525252;
-		font-size: 16px;
-		&::before {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 2px;
-			background-color: #ff6734;
-			top: 0;
-			opacity: 0;
-			position: absolute
-		}
-
-		&::after {
-			content: '';
-			display: block;
-			width: 100%;
-			height: 2px;
-			background-color: #ff6734;
-			bottom: 0;
-			opacity: 0;
-			position: absolute;
-		}
-
-		&:hover {
-			cursor:pointer;
-			&::after {
-				animation-name: ${AnimeLines};
-				animation-duration: 300ms;
-				animation-timing-function: ease-in-out;
-				animation-fill-mode: both;
-			}
-			&::before {
-				animation-name: ${AnimeLines2};
-				animation-duration: 300ms;
-				animation-timing-function: ease-in-out;
-				animation-fill-mode: both;
-			}
-		}
-	}
-`
-
-// const handleRouteChange = url => {
-//   console.log('App is changing to: ', url)
-// }
-
-// Router.events.on('routeChangeStart', handleRouteChange)
 
 const navElems = [
 	{
@@ -254,7 +69,7 @@ const Nav = (props) => {
 			.to(backgroundNav.current, 0.1, { height: '100%', backgroundColor: '#FF6734' })
 			.to(ulRef.current, 0.1, { autoAlpha: 1 })
 			.to([ lines[0], lines[2] ], 0.1, { backgroundColor: '#fff', visibility: 'visible' })
-			.to([ links[0], links[1], links[2], links[3] ], 0.1, { x: 500 });
+			// .to([ links[0], links[1], links[2], links[3] ], 0.1, { x: 500 });
 		// .staggerFrom(links, 0.1,{ x:-250,ease: Power3.easeOut},0.01)
 
 

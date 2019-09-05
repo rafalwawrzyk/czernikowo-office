@@ -1,12 +1,5 @@
-import React from 'react'
-import css from './styles.scss'
-import styled from 'styled-components'
-
-
-const AboutText = styled.p`
-    text-align: center;
-    font-size: 16px;
-`
+import React from 'react';
+import {AboutText} from './style.js';
 
 
 const InfoText = (props) => {
