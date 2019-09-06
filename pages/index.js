@@ -8,7 +8,7 @@ import udrawbusiness from '../static/business.svg';
 import ContactSubsection from '../components/contactSubsection/contactSubsection';
 import Footer from '../components/footer/footer';
 import Header from '../components/Header/header';
-import {HomeWrapper} from './styles/home'
+import {HomeWrapper} from '../styles/home';
 
 
 const Home = () => {

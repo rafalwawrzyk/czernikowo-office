@@ -5,7 +5,7 @@ import ContactSubsection from '../components/contactSubsection/contactSubsection
 import Footer from '../components/footer/footer';
 import Title from '../components/title/title';
 import imgBg from '../static/preferences.svg';
-import {AboutContainer} from './styles/about'
+import {AboutContainer} from '../styles/about'
 
 import AboutContent from '../components/aboutContent/aboutContent';
 import Header from '../components/Header/header';

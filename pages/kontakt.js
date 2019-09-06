@@ -6,7 +6,7 @@ import Title from '../components/title/title';
 import imgBg from '../static/business.svg';
 import ContactContent from '../components/contactContent/contactContent';
 import dynamic from 'next/dynamic';
-import { ContactContainer, ContentContainer } from './styles/contact';
+import { ContactContainer, ContentContainer } from '../styles/contact';
 
 const DynamicComponentWithCustomLoading = dynamic(() => import('../components/map/map'), {
 	ssr: false
