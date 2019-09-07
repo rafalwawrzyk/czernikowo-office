@@ -1,15 +1,13 @@
 import React from 'react';
 import HomeLeftText from '../homeLeftText/homeLeftText';
 import HomeRight from '../homeRight/homeRight';
-import {Wrapper} from './style';
+import { Wrapper } from './style';
 
-
-const InfoRight = (props) => (
-    <Wrapper>
-        <HomeLeftText href={props.href} text={props.text} btnText={props.btnText} textSecondary={props.textSecondary}/>
-        <HomeRight img={props.img}/>
-    </Wrapper>
-)
-
+const InfoRight = ({ href, text, btnText, img,textSecondary }) => (
+	<Wrapper>
+		<HomeLeftText href={href} text={text} btnText={btnText} textSecondary={textSecondary} />
+		<HomeRight img={img} />
+	</Wrapper>
+);
 
 export default InfoRight;

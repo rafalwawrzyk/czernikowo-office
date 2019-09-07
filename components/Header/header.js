@@ -7,11 +7,11 @@ import {HeaderWrapper} from './style';
 
 
 
-const Header = (props) => {
+const Header = ({homeTitle, titlePartOne,titleColored,titleRest,img,homeImage}) => {
 	return (
 		<HeaderWrapper>
-			<Title homeTitle={props.homeTitle} titlePartOne={props.titlePartOne} titleColored={props.titleColored} titleRest={props.titleRest} />
-			<Hero img={props.img} homeImage={props.homeImage}/>
+			<Title homeTitle={homeTitle} titlePartOne={titlePartOne} titleColored={titleColored} titleRest={titleRest} />
+			<Hero img={img} homeImage={homeImage}/>
 		</HeaderWrapper>
 	);
 };

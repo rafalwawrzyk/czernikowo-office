@@ -4,11 +4,11 @@ import Subheader from '../subheader/subheader'
 import {Wrapper,
     TextSecondary} from './style'
 
-const homeLeftText = (props) => (
+const homeLeftText = ({text,textSecondary,btnText,href}) => (
     <Wrapper>
-        <Subheader text={props.text}/>
-            <TextSecondary>{props.textSecondary}</TextSecondary>
-        <Button btnText={props.btnText} href={props.href}/>
+        <Subheader text={text}/>
+            <TextSecondary>{textSecondary}</TextSecondary>
+        <Button btnText={btnText} href={href}/>
     </Wrapper>
 )
 

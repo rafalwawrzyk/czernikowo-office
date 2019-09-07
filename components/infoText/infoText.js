@@ -2,10 +2,10 @@ import React from 'react';
 import {AboutText} from './style.js';
 
 
-const InfoText = (props) => {
+const InfoText = ({infoText}) => {
     return(
         <div>
-            <AboutText>{props.infoText}</AboutText>
+            <AboutText>{infoText}</AboutText>
         </div>
     )
 }

@@ -4,14 +4,14 @@ import Logo from '../logo/logo';
 import {FullScreen} from './style.js';
 
 
-const NavBar = (props) => {
+const NavBar = ({timeline}) => {
     const navBarRef = React.createRef();
     const getNavBar = ()=>{
         return navBarRef
     }
     return(
         <FullScreen ref={navBarRef}>
-            <Nav getParentRef={getNavBar} timeline={props.timeline}/>
+            <Nav getParentRef={getNavBar} timeline={timeline}/>
             <Logo/>
         </FullScreen>
     )

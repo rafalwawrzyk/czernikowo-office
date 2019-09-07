@@ -7,16 +7,16 @@ HeroImage
 
 
 
- const Hero = ({homeImage=false,...props}) => {
+ const Hero = ({homeImage=false,img}) => {
     return(
         <>
         {homeImage ? 
             <HeroWrapper> 
-            <HeroImage src={props.img}></HeroImage>
+            <HeroImage src={img}></HeroImage>
             </HeroWrapper>
         :
             <HeroWrapperPage>
-                <HeroImage src={props.img} ></HeroImage>
+                <HeroImage src={img} ></HeroImage>
             </HeroWrapperPage>
     
         }

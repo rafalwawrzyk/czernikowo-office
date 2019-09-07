@@ -1,8 +1,8 @@
 import React from 'react';
 import {RightImage} from './style';
 
-const HomeRight = (props) => (
-        <RightImage src={props.img}/>
+const HomeRight = ({img}) => (
+        <RightImage src={img}/>
 )
 
 

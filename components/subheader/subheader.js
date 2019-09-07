@@ -20,10 +20,7 @@ const Subheader = ({subheaderCentered=false,...props}) => {
                     </SubheaderTitle> 
         }
         </>
-        // <SubheaderTitle>
-        //     {normalText} <SubheaderSpan> {lastWord}</SubheaderSpan>
-        // </SubheaderTitle>
-        // <h2 className={subheaderCentered ? css.subheaderCentered :null}>{normalText} <span className={ css.subheaderSpan}> {lastWord}</span></h2>
+        
     )
 }
 

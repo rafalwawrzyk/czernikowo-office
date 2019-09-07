@@ -29,11 +29,6 @@ export default class MyApp extends App {
 
 	render() {
 		const { Component, pageProps } = this.props;
-		// const handleRouteChange = (url) => {
-		// 	console.log('App is changing to: ', url);
-		// };
-
-		// Router.events.on('routeChangeStart', handleRouteChange);
 		return (
 			<Container>
 				<MorphTransition timeout={300} classNames="morph">

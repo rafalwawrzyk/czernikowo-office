@@ -1,17 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Router from 'next/router';
-import {Navigation,
-	NavList,
-	Hamburger,
-	Line1,
-	Line2,
-	Line3,
-	Linked,
-	NavItem} from './style';
-
-
+import { Navigation, NavList, Hamburger, Line1, Line2, Line3, Linked, NavItem } from './style';
 
 const navElems = [
 	{
@@ -36,7 +27,7 @@ const navElems = [
 	}
 ];
 
-const Nav = (props) => {
+const Nav = () => {
 	// refs
 	let link = React.createRef('link');
 	let line = React.createRef('line');
@@ -44,19 +35,16 @@ const Nav = (props) => {
 	let ulRef = React.createRef('ulRef');
 	const router = useRouter();
 
-
 	// array with refs
 	let links = [];
 	let lines = [];
 	let fnRun = null;
-	const getParentRef = props.getParentRef().current;
 
 	// lifecycle method
 	useEffect(() => {
 		const GSAP = require('gsap');
 		const { TimelineLite, Power3 } = GSAP;
 		const tl = new TimelineLite({ paused: true, reversed: true });
-		console.log('jest nav');
 		// gsap animation
 
 		fnRun = tl
@@ -68,11 +56,7 @@ const Nav = (props) => {
 			.to([ lines[0], lines[2] ], 0.2, { visibility: 'hidden' })
 			.to(backgroundNav.current, 0.1, { height: '100%', backgroundColor: '#FF6734' })
 			.to(ulRef.current, 0.1, { autoAlpha: 1 })
-			.to([ lines[0], lines[2] ], 0.1, { backgroundColor: '#fff', visibility: 'visible' })
-			// .to([ links[0], links[1], links[2], links[3] ], 0.1, { x: 500 });
-		// .staggerFrom(links, 0.1,{ x:-250,ease: Power3.easeOut},0.01)
-
-
+			.to([ lines[0], lines[2] ], 0.1, { backgroundColor: '#fff', visibility: 'visible' });
 	});
 
 	const sizeCheck = () => {
@@ -84,14 +68,13 @@ const Nav = (props) => {
 
 	// run or reverse gsap animation
 	const hamburgerAction = () => {
-    if(sizeCheck()){
-      fnRun.reversed() ? fnRun.play() : fnRun.reverse();
-      console.log(links);
-      console.log(lines[0]);
-    }else{
-      console.log('nie włączam animaciji')
-    }
-
+		if (sizeCheck()) {
+			fnRun.reversed() ? fnRun.play() : fnRun.reverse();
+			console.log(links);
+			console.log(lines[0]);
+		} else {
+			console.log('nie włączam animaciji');
+		}
 	};
 
 	const hamburgerLinkAction = (e, newHref) => {
@@ -132,9 +115,7 @@ const Nav = (props) => {
 								}}
 							>
 								<Link href={navElems[elem]['href']}>
-									<NavItem
-										onClick={(e) => hamburgerLinkAction(e, navElems[elem]['href'])}
-									>
+									<NavItem onClick={(e) => hamburgerLinkAction(e, navElems[elem]['href'])}>
 										{navElems[elem]['name']}
 									</NavItem>
 								</Link>

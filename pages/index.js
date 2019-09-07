@@ -12,8 +12,6 @@ import {HomeWrapper} from '../styles/home';
 
 
 const Home = () => {
-	{console.log('rendered')}
-
 	return (
 		<HomeWrapper>
 			<Header

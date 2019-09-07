@@ -5,7 +5,7 @@ import {FooterBg} from './style'
 
 
 
-const Footer = (props) => (
+const Footer = () => (
     <FooterBg src={footerImg}/>
 )
 
