@@ -2,7 +2,7 @@ import styled, {keyframes} from 'styled-components'
 
 
 export const Navigation = styled.nav`
-		width: 100%;
+	width: 100%;
 	position: relative;
 	height: 50px;
 	position: fixed;

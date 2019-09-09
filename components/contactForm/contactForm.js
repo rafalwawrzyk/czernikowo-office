@@ -27,7 +27,7 @@ const ContactForm = ({values,errors,touched,isSubmitting,...props}) => {
                     color={(errors.name && touched.name) && "red"}
 
                     />
-                    {errors.name && touched.name && <ErrorMessage>! {errors.name}</ErrorMessage> }
+                    {errors.name && touched.name && <ErrorMessage>{errors.name}</ErrorMessage> }
                     </>
             
                     <>

@@ -18,7 +18,6 @@ export const Form = styled(Formik)`
          -o-border-radius:3px;
          
          &::placeholder{
-             color:#ababab;
              vertical-align:top;
          }
         }

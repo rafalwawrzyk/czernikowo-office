@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 
 export const Btn = styled.button`
@@ -8,7 +8,7 @@ export const Btn = styled.button`
 	border: none;
 	text-decoration: none;
 	color: #ff6734;
-	background-color: #fff;
+	background-color:#fff;
 	margin-top: 10px;
 	margin-left: 7px;
 	font-size: 11px;
