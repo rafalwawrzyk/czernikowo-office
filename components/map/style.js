@@ -15,5 +15,6 @@ img{
 @media screen and (min-width: 900px) {
   margin-bottom: 0;
   width: 50%;
+  height:400px;
 }
 `
