@@ -55,7 +55,7 @@ const Nav = () => {
 			.to(lines[2], 0.1, { rotation: '-45deg' })
 			.to([ lines[0], lines[2] ], 0.2, { visibility: 'hidden' })
 			.to(backgroundNav.current, 0.1, { height: '100%', backgroundColor: '#FF6734' })
-			.to(ulRef.current, 0.1, { autoAlpha: 1 })
+			.to(ulRef.current, 0.1, { autoAlpha: 1,display:'block' })
 			.to([ lines[0], lines[2] ], 0.1, { backgroundColor: '#fff', visibility: 'visible' });
 	});
 

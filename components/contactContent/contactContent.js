@@ -9,13 +9,18 @@ const contactInfo = [
 	},
 	{
 		header: 'Tel./Fax ',
-		text: '54 288 92 22 502 505 828',
+		text: '54 288 92 22 ',
 		id: 2
+	},
+	{
+		header: 'Kom.',
+		text: '502 505 828',
+		id: 3
 	},
 	{
 		header: 'Email',
 		text: 'kancelaria@kpfczernikowo.eu',
-		id: 3
+		id: 4
 	}
 ];
 

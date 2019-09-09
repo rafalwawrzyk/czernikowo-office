@@ -30,6 +30,7 @@ export const NavList = styled.div`
 	top: 50%;
 	transform: translate(0, -50%);
 	opacity: 0;
+	display:none;
 	ul{
 		margin-left:auto;
 		margin-right:auto;
@@ -40,6 +41,7 @@ export const NavList = styled.div`
 		top: 0;
 		transform: none;
 		position: static;
+		display:block !important;
 		-webkit-transform: none;
 		-moz-transform: none;
 		-ms-transform: none;

@@ -7,7 +7,7 @@ const Button = ({ bigger = false, formButton = false, href = '/', btnText }) => 
 	return (
 		<>
 		{!formButton ? 	<Link href={href}>
-			<Btn bigger={bigger}>{btnText}</Btn>
+			<Btn bigger={bigger} >{btnText}</Btn>
 		</Link> : <Btn bigger={bigger}>{btnText}</Btn>}
 		</>
 	
